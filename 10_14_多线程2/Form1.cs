@@ -50,6 +50,45 @@ namespace _10_14_多线程2
                Thread.Sleep(50);
             }
         }
+        //线程挂起
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (this.button2.Text == "线程挂起")
+            {
+                for (int i = 0; i < Threads.Length-1; i++)
+                {
+                    Threads[i].Suspend();//过时的方法 自己构建Do循环可以替代
+                }
+                this.button2.Text = "线程唤醒";
+            }
+            else
+            {
+                for (int i = 0; i < Threads.Length-1; i++)
+                {
+                    Threads[i].Resume();//过时的方法
+                }
+                this.button2.Text = "线程挂起";
+            }
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Threads.Length-1; i++)
+            {
+                Threads[i].Abort();//终止线程
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                ProgressBar progressBar = (ProgressBar)this.Controls.Find("progressBar" + i.ToString(), false).FirstOrDefault();
+                Label label = (Label)this.Controls.Find("Therad_label_" + i.ToString(), false).FirstOrDefault();
+                progressBar.Value = 0;
+                label.Text = "0%";
+            }
+        }
     }
 }
