@@ -27,21 +27,23 @@ namespace _10_14_多线程2
             //{
             //    this.progressBar1.Value = i;
             //}
-            Thread t = new Thread(Method);
-            t.Start();
+            Thread t1 = new Thread(()=>Method(this.progressBar1,this.Therad_label_1));
+            t1.Start();
+            Thread t2 = new Thread(() => Method(this.progressBar2, this.Therad_label_2));
+            t2.Start();
         }
 
-        //启动线程
-        public void Method()
+        //线程的方法
+        public void Method(ProgressBar progressBar,Label label)
         {
             for (int i = 0; i <= 100; i++)
             {
-                //this.Invoke(new MethodInvoker(delegate () { }));
-                this.Invoke(new MethodInvoker(delegate () 
+                this.Invoke(new MethodInvoker(delegate ()
                 {
-                    this.progressBar1.Value = i;
+                    progressBar.Value = i;
+                    label.Text = i.ToString()+"%";
                 }));
-                
+               Thread.Sleep(50);
             }
         }
 
