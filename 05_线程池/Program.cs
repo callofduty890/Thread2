@@ -14,7 +14,7 @@ namespace _05_线程池
             for (int i = 0; i < 5; i++)
             {
                 Console.Write("{0}-{1}", state.ToString(), i);
-                Thread.Sleep(100);//模拟实际操作
+                Thread.Sleep(100);//模拟实际操作 TASK
             }
         }
 

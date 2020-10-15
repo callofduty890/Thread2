@@ -13,6 +13,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_同步事件和等待句
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_线程池", "05_线程池\05_线程池.csproj", "{9FCFFD07-53D7-44CA-A9CC-774FC73F0507}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Mutex同步", "06_Mutex同步\06_Mutex同步.csproj", "{EAB9B137-4F21-4C7F-A889-0CFE738ACBB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Timer定时器", "07_Timer定时器\07_Timer定时器.csproj", "{6F99A8E0-1A97-4C01-A178-FFE54682CE16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_并行处理Parallel", "08_并行处理Parallel\08_并行处理Parallel.csproj", "{BCF86E21-5E15-48BE-BE63-C767D4FBC584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_显式创建和运行任务", "09_显式创建和运行任务\09_显式创建和运行任务.csproj", "{DC0A6011-3367-47C1-BF0F-79FC2D4673C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Task常用操作", "10_Task常用操作\10_Task常用操作.csproj", "{250FD98B-D7F9-404B-BDFD-4A48D100F5F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_task返回值", "11_task返回值\11_task返回值.csproj", "{BC848941-A739-4F60-892D-761C8A5FE04F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_奇数偶数", "12_奇数偶数\12_奇数偶数.csproj", "{F54440E6-F957-4565-910C-61CC5159EE3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +53,34 @@ Global
 		{9FCFFD07-53D7-44CA-A9CC-774FC73F0507}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FCFFD07-53D7-44CA-A9CC-774FC73F0507}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FCFFD07-53D7-44CA-A9CC-774FC73F0507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAB9B137-4F21-4C7F-A889-0CFE738ACBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAB9B137-4F21-4C7F-A889-0CFE738ACBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAB9B137-4F21-4C7F-A889-0CFE738ACBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAB9B137-4F21-4C7F-A889-0CFE738ACBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F99A8E0-1A97-4C01-A178-FFE54682CE16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F99A8E0-1A97-4C01-A178-FFE54682CE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F99A8E0-1A97-4C01-A178-FFE54682CE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F99A8E0-1A97-4C01-A178-FFE54682CE16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF86E21-5E15-48BE-BE63-C767D4FBC584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF86E21-5E15-48BE-BE63-C767D4FBC584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF86E21-5E15-48BE-BE63-C767D4FBC584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF86E21-5E15-48BE-BE63-C767D4FBC584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0A6011-3367-47C1-BF0F-79FC2D4673C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0A6011-3367-47C1-BF0F-79FC2D4673C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0A6011-3367-47C1-BF0F-79FC2D4673C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0A6011-3367-47C1-BF0F-79FC2D4673C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250FD98B-D7F9-404B-BDFD-4A48D100F5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250FD98B-D7F9-404B-BDFD-4A48D100F5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250FD98B-D7F9-404B-BDFD-4A48D100F5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250FD98B-D7F9-404B-BDFD-4A48D100F5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC848941-A739-4F60-892D-761C8A5FE04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC848941-A739-4F60-892D-761C8A5FE04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC848941-A739-4F60-892D-761C8A5FE04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC848941-A739-4F60-892D-761C8A5FE04F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54440E6-F957-4565-910C-61CC5159EE3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54440E6-F957-4565-910C-61CC5159EE3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54440E6-F957-4565-910C-61CC5159EE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54440E6-F957-4565-910C-61CC5159EE3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
